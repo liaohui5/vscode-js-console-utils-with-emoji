@@ -3,7 +3,7 @@
     "displayName": "javascript console utils with emoji",
     "description": "Help insert and remove console.(*) statements",
     "version": "0.7.0",
-    "publisher": "whtouche",
+    "publisher": "liaohui5",
     "icon": "logo.jpeg",
     "repository": "https://github.com/liaohui5/vscode-js-console-utils-with-emoji",
     "engines": {
