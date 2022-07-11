@@ -1,57 +1,60 @@
 {
-    "name": "vscode-js-console-utils-with-emoji",
-    "displayName": "javascript console utils with emoji",
-    "description": "Help insert and remove console.(*) statements",
-    "version": "0.7.0",
-    "publisher": "liaohui5",
-    "icon": "logo.jpeg",
-    "repository": "https://github.com/liaohui5/vscode-js-console-utils-with-emoji",
-    "engines": {
-        "vscode": "^1.5.0"
-    },
-    "categories": [
-        "Other"
+  "name": "vscode-js-console-utils-with-emoji",
+  "displayName": "vscode-js-console-utils-with-emoji",
+  "description": "Help insert and remove console.(*) statements",
+  "version": "0.7.1",
+  "publisher": "rimless-monokai",
+  "icon": "logo.jpeg",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/liaohui5/vscode-js-console-utils-with-emoji"
+  },
+  "engines": {
+    "vscode": "^1.5.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onCommand:extension.insertLogStatement",
+    "onCommand:extension.deleteAllLogStatements"
+  ],
+  "main": "./extension",
+  "contributes": {
+    "commands": [
+      {
+        "command": "extension.insertLogStatement",
+        "title": "Insert Log Statement"
+      },
+      {
+        "command": "extension.deleteAllLogStatements",
+        "title": "Delete all console.log statements"
+      }
     ],
-    "activationEvents": [
-        "onCommand:extension.insertLogStatement",
-        "onCommand:extension.deleteAllLogStatements"
-    ],
-    "main": "./extension",
-    "contributes": {
-        "commands": [
-            {
-                "command": "extension.insertLogStatement",
-                "title": "Insert Log Statement"
-            },
-            {
-                "command": "extension.deleteAllLogStatements",
-                "title": "Delete all console.log statements"
-            }
-        ],
-        "keybindings": [
-            {
-                "command": "extension.insertLogStatement",
-                "key": "shift+ctrl+l",
-                "mac": "shift+cmd+l",
-                "when": "editorTextFocus"
-            },
-            {
-                "command": "extension.deleteAllLogStatements",
-                "key": "shift+ctrl+d",
-                "mac": "shift+cmd+d"
-            }
-        ]
-    },
-    "scripts": {
-        "postinstall": "node ./node_modules/vscode/bin/install",
-        "test": "node ./node_modules/vscode/bin/test"
-    },
-    "devDependencies": {
-        "typescript": "^2.0.3",
-        "vscode": "^1.0.0",
-        "mocha": "^2.3.3",
-        "eslint": "^3.6.0",
-        "@types/node": "^6.0.40",
-        "@types/mocha": "^2.2.32"
-    }
+    "keybindings": [
+      {
+        "command": "extension.insertLogStatement",
+        "key": "shift+ctrl+l",
+        "mac": "shift+cmd+l",
+        "when": "editorTextFocus"
+      },
+      {
+        "command": "extension.deleteAllLogStatements",
+        "key": "shift+ctrl+d",
+        "mac": "shift+cmd+d"
+      }
+    ]
+  },
+  "scripts": {
+    "postinstall": "node ./node_modules/vscode/bin/install",
+    "test": "node ./node_modules/vscode/bin/test"
+  },
+  "devDependencies": {
+    "typescript": "^2.0.3",
+    "vscode": "^1.0.0",
+    "mocha": "^2.3.3",
+    "eslint": "^3.6.0",
+    "@types/node": "^6.0.40",
+    "@types/mocha": "^2.2.32"
+  }
 }

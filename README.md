@@ -6,7 +6,7 @@ Fork from [vscode-js-console-utils](https://github.com/whtouche/vscode-js-consol
 
 ## Installing
 
-This extension is available for free in the [Visual Studio Code Marketplace](https://marketplace.visualstudio.com/items?itemName=liaohui5.vscode-js-console-utils-with-emoji)
+This extension is available for free in the [Visual Studio Code Marketplace](https://marketplace.visualstudio.com/items?itemName=rimless-monokai.vscode-js-console-utils-with-emoji)
 
 ## Usage
 
